@@ -1,0 +1,91 @@
+Word	Definition
+51% Attack, Majority Hash Rate Attack	When a single entity controls over 51% of the network's hash rate
+Denominations	Common units and values used in the Bitcoin system like BTC, mBTC, uBTC
+Txid, Transaction Identifier	Unique hash that identifies each transaction
+Outpoint	Combination of transaction hash and output index that uniquely identifies an unspent output
+Output, Transaction Output, TxOut	Amounts of BTC sent to addresses in a transaction
+HD Wallet Seed, Root Seed	Master seed used to generate all keys in an HD wallet
+Master Chain Code And Private Key	Values used to derive child keys in a HD wallet
+Chain Code, HD Wallet Chain Code	Value chained to keys to strengthen child key derivation security
+Child Key, HD Wallet Child Key	Keys derived from parent keys using Chain Code & Child Number
+Wallet	Program that stores private keys and interacts with the blockchain
+HD Protocol, HD Wallet, BIP32	Hierarchical Deterministic wallet standard
+Parent Key, HD Wallet Parent Key	Key from which child keys are derived
+Private Key, ECDSA Private Key	Random number used to sign transactions
+Public Key, ECDSA Public Key	Value derived from private key used to receive funds
+Signature, ECDSA Signature	Value proving ownership of funds signed with private key
+Signature Script, ScriptSig	Part of transaction input validating signatures
+Pubkey Script, ScriptPubKey	Part of transaction output defining payout conditions
+Difficulty, Network Difficulty	Measure of how hard it is to find a valid block hash
+nBits, Target Threshold	Compact representation of target threshold in block header
+Proof Of Work	Method of validating transactions through resource expenditure
+Block Header	Block identifier present in each block
+Block, Block Of Transactions	Collection of valid transactions batched together
+Confirmation Score, Confirmed Transaction	Measure of reliability based on number of blocks after it
+Locktime, nLockTime	Timestamp or block height after which a tx can be included in a block
+Sequence Number (Transactions)	Field used in replacement and relative locktimes of transactions
+Input, Transaction Input, TxIn	Reference to previous output being spent including scriptSig
+Redeem Script, RedeemScript	Script in a P2SH output defining validity conditions
+P2PKH Address, Pay To PubKey Hash	Address format using hash of public key
+M-of-N Multisig, Multisig Output	Output requiring M signatures from N available public keys
+Opcode	Code inside scripts determining validity evaluation logic
+Standard Transaction	Tx with valid signatures and outputs without uncommon features
+P2SH Multisig, P2SH Multisig Output	Multisig using P2SH format
+P2SH Address, Pay To Script Hash	Address format using hash of script instead of pubkey
+Base58check, Bitcoin Address Encoding	Encoding validation of address strings
+Payment Addresses	Addresses receiving payments starting with 1 or 3
+Header Chain, Best Header Chain	Candidate chain of block headers
+Mining, Miner	Process of validating transactions and adding them to the blockchain
+High-Priority Transaction, Free Tx	Transactions without fees that are "free"
+Minimum Relay Fee	Lowest network fee for nodes to propagate tx
+Transaction Fee, Miner Fee	Amount in satoshis per KB paid to miners
+Block Reward, Block Miner Reward	New coins "minted" and granted to the miner of a block
+Coinbase, Coinbase Field	Special first transaction in each block
+Coinbase / Generation Transaction	Transaction spending reward to the coinbase address
+Genesis Block, Block 0	Very first block of the blockchain with no previous ones
+Block Chain Height, Block Height	Height of the blockchain measured by number of blocks
+Headers-First, Headers-First Sync	Faster sync by validating headers first before blocks
+Blocks-First, Blocks-First Sync	Original and slower sync by validating blocks first
+SPV, Simplified Payment Verification	Lightweight validation of blocks without full blockchain
+Merkle Root	Top hash in Merkle tree representing all tx hashes in a block
+Merkle Tree	Tree structure used to efficiently summarize all tx in a block
+Merkle Block	Block including Merkle tree allowing verification of transactions
+Bloom Filter	Probabilistic data structure used in SPV and mining alerts
+Change, Change Address, Change Output	Remaining balance from a transaction sent to a new address
+CompactSize Unsigned Integer	Variable length encoding of integers
+Compressed Public Key	Form of serialized public keys to reduce size
+Consensus Rules, Validation Rules	Rules defining valid block and transaction structure
+Consensus	Global agreement on the valid blockchain and state
+Unspent Transaction Output, UTXO	Unspent outputs in the UTXO set able to be spent
+Null Data (OP_RETURN) Transaction	Transaction including arbitrary data in OP_RETURN script
+DNS Seed	Seed nodes listed in source code seeding initial network nodes
+Double Spend	Invalid scenario where a coin is spent twice
+Escrow Contract	Script for conditionally locking funds until a set of rules are met
+Extended Key, HD Wallet Extended Key	Master key exposing full public key tree of a HD wallet
+Soft Fork, Soft-Forking Change	Change backward compatible still enforcing new structural rules
+Hard Fork, Hard-Forking Change	Change not backward compatible, creates bifurcated blockchains
+Fork, Accidental Fork	Potential result of incompatible changes to consensus rules
+Hardened Extended Key (HD Wallets)	Extended keys tightened for security with separation of purpose
+Initial Block Download, IBD	Process of syncing blockchain for the first time
+Serialized Block, Raw Block	Binary representation of block for communication
+Serialized Transaction, Raw Transaction	Binary representation of transaction for network transmission
+RPC Byte Order	Byte ordering used in command line communication over JSON-RPC
+Internal Byte Order	Endian ordering used internally in protocols
+Inventory, Block Or Transaction Inventory	Messages announcing availability of data to download
+Regtest, Regression Test Mode	Chain with configurable difficulty for testing
+Testnet, Testing Network	Development version used to test apps with dispensable coins
+Mainnet, Bitcoin Main Network	Primary live Bitcoin production network
+Message Header	Specifying type and length of following payload in P2P protocol
+Start String, Network Magic	Identifier of network in message headers
+Stale Block	Valid block but not on best known chain due to a reorganization
+Orphan Block	Block whose parent not known to node, temporarily stored
+Payment Protocol, Payment Request, BIP70	Standard for communicating payment details to wallets
+SIGHASH_ALL	Signature mode including all outputs in hash
+Transaction Malleability, Mutability	Potential for transaction IDs to change
+Signature Hash	Hash of transaction components signed in signature
+SIGHASH_SINGLE	Signature covers all inputs and only output at same index
+SIGHASH_ANYONECANPAY	Signature covers all outputs but allow change in inputs
+SIGHASH_NONE	Signature covers no inputs and allows modification of outputs
+Wallet Import Format	Standard for importing private keys into wallets
+Watch-Only Address	Addresses without private keys for monitoring balances
+Block Chain	Structure recording every valid bitcoin transaction that has occurred

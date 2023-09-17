@@ -1,0 +1,85 @@
+Procedure	Description
+getbestblockhash	Returns the hash of the best (tip) block in the longest blockchain.
+getblock	Returns information about a block by hash.
+getblockchaininfo	Returns various state info regarding blockchain processing.
+getblockcount	Returns the number of blocks in the longest blockchain.
+getblockhash	Returns hash of block in best-block-chain at height.
+getchaintips	Return information about all known tips in the block tree.
+getdifficulty	Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
+getmempoolinfo	Returns information about the transaction pool.
+getrawmempool	Returns all transaction ids in memory pool.
+gettxout	Returns details about an unspent transaction output (UTXO).
+gettxoutproof	Generates and returns a merkle proof of txids
+gettxoutsetinfo	Returns statistics about the unspent transaction output set.
+verifychain	Verifies the block chain database.
+verifytxoutproof	Verifies the proof of transaction inclusion in a block.
+getinfo	Get general information about the Bitcoin Core node and blockchain.
+help	List all commands or get help for a specified command.
+stop	Stop Bitcoin Core.
+generate	Generates nblocks of blocks immediately to try to increase difficulty.
+getgenerate	Returns if generation is enabled and limits
+setgenerate	Sets generation enabled flag.
+getblocktemplate	Returns data needed to construct a block to mine.
+getmininginfo	Returns mining information about blocks, transactions and chain.
+getnetworkhashps	Estimates network hashes per second using data from the last n blocks.
+prioritisetransaction	Accepts the transaction into mined blocks at higher priority.
+submitblock	Attempts to submit new block to network.
+addnode	Maintain list of peers, and addresses attempted to connect to.
+getaddednodeinfo	Returns information about the given added node, or all added nodes.
+getconnectioncount	Returns the number of connections to other nodes.
+getnettotals	Returns information about network traffic, bytes in, bytes out.
+getnetworkinfo	Returns information about the net parameters
+getpeerinfo	Returns data about each connected network node as a json array.
+ping	Requests that a ping be sent to all other nodes, to measure ping time.
+createrawtransaction	Creates a raw transaction spending given inputs
+decoderawtransaction	Return a JSON object representing the serialized, hex-encoded transaction.
+decodescript	Decode a hex-encoded script.
+getrawtransaction	Returns raw transaction representation.
+sendrawtransaction	Submits raw transaction to network.
+signrawtransaction	Sign inputs of a raw transaction
+createmultisig	Creates a multisig address
+estimatefee	Estimates the approximate fee per kilobyte needed for a transaction
+estimatepriority	Estimates the priority of a transaction
+validateaddress	Return information about the given bitcoin address.
+verifymessage	Verify a signed message.
+addmultisigaddress	Adds a multisignature address to the wallet.
+backupwallet	Safely copies .dat files out of the wallet directory.
+dumpprivkey	Reveals the private key corresponding to an address.
+dumpwallet	Dumps all wallet keys in a human-readable format.
+encryptwallet	Encrypts the wallet with a passphrase.
+getaccountaddress	Returns a new bitcoin address for receiving payments to the account.
+getaccount	Returns the account associated with the given address.
+getaddressesbyaccount	Returns the list of addresses for the given account.
+getbalance	Returns the balance of the bitcoin wallet at current block height.
+getnewaddress	Generates and returns a new private key and address.
+getrawchangeaddress	Returns a new address for receiving change
+getreceivedbyaccount	Returns the total amount received by addresses with the given account.
+getreceivedbyaddress	Returns the total amount received by the given address.
+gettransaction	Get detailed information about an in-wallet transaction.
+getunconfirmedbalance	Returns the wallet's balance excluding unconfirmed transactions.
+getwalletinfo	Returns an object containing wallet state info.
+importaddress	Adds an address or script (in hex) to the wallet
+importprivkey	Adds a private key (as JSON) to the wallet
+importwallet	Imports keys from a wallet dump file
+keypoolrefill	Fills the keypool, requires an unlocked wallet
+listaccounts	Returns Object that has account names as keys, account balances as values.
+listaddressgroupings	Lists groups of addresses which have had their common ownership
+listlockunspent	Lists unspent transaction outputs with lock state
+listreceivedbyaccount	Lists balances by account
+listreceivedbyaddress	Lists balances by address
+listsinceblock	Get all transactions in blocks since block [blockhash]
+listtransactions	Returns a list of wallet transactions.
+listunspent	Returns array of unspent transaction outputs with between minimum and maximum confirmations
+lockunspent	Locks an unspent transaction output
+move	Moves funds between accounts
+sendfrom	Sends coins from specified address (must have private keys)
+sendmany	Sends coins from the wallet to multiple addresses
+sendtoaddress	Sends an amount to a given address
+setaccount	Sets the account associated with the given address
+settxfee	Set the transaction fee per kB
+signmessage	Sign a message with the private key of an address
+walletlock	Removes private keys from memory, just leaves "watching" keys
+walletpassphrase	Stores the wallet decryption key in memory, prompting the user to re-enter
+walletpassphrasechange	Changes the wallet passphrase from the command line
+gethashespersec	Returns a recent hashes per second performance measurement while generating.
+getwork	Returns formatted hashes output and generates Bitcoin work internally.
